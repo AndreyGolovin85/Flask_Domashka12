@@ -7,8 +7,8 @@ def load_json_fliles(path):
 
 
 def overwrite_json_files(list, path):
-    with open(path, "w", encoding="utf-8") as file:
-        json.dump(list, file)
+    with open(path, "w",  encoding="utf-8") as file:
+        json.dump(list, file, ensure_ascii=False)
 
 
 

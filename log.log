@@ -835,3 +835,847 @@ INFO:root:page add post
 INFO:werkzeug:127.0.0.1 - - [05/May/2022 00:37:44] "POST /posts HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [05/May/2022 00:37:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [05/May/2022 00:37:44] "[33mGET /uploads/images/46344.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:800 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:800 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:800 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:800 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:800 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:800 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:800 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:18:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:18:41] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:18:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Loading the main page
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:18:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:18:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:18:47] "GET /search?s=кот HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:18:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:19:00] "GET /search?s=Картинка HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:19:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /uploads/images/hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads"], path)
+KeyError: 'uploads'
+ERROR:main:Exception on /uploads/images//hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads"], path)
+KeyError: 'uploads'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:19:00] "[35m[1mGET /uploads/images/hdr009.jpg HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:19:00] "[35m[1mGET /uploads/images//hdr009.jpg HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:21:50] "GET /search?s=Картинка HTTP/1.1" 200 -
+ERROR:main:Exception on /uploads/images/hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads"], path)
+KeyError: 'uploads'
+ERROR:main:Exception on /uploads/images//hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads"], path)
+KeyError: 'uploads'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:21:50] "[35m[1mGET /uploads/images/hdr009.jpg HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:21:50] "[35m[1mGET /uploads/images//hdr009.jpg HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:21:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:21:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:Loading the main page
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:22:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:22:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Loading the main page
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:22:03] "GET / HTTP/1.1" 200 -
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:22:08] "GET /search?s=кот HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:22:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Loading the main page
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:22:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:22:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:22:17] "GET /search?s=Картинка HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:22:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /uploads/images/hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads"], path)
+KeyError: 'uploads'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:22:17] "[35m[1mGET /uploads/images/hdr009.jpg HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /uploads/images//hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads"], path)
+KeyError: 'uploads'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:22:17] "[35m[1mGET /uploads/images//hdr009.jpg HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:23:12] "GET /search?s=Картинка HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:23:12] "[33mGET /uploads/images/hdr009.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:23:12] "[33mGET /uploads/images//hdr009.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:23:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:23:13] "GET /search?s=Картинка HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:23:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:23:13] "[33mGET /uploads/images/hdr009.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 22:23:13] "[33mGET /uploads/images//hdr009.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:03] "GET /search?s=Картинка HTTP/1.1" 200 -
+ERROR:main:Exception on /uploads/images/hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads"], path)
+KeyError: 'uploads'
+ERROR:main:Exception on /uploads/images//hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads"], path)
+KeyError: 'uploads'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:03] "[35m[1mGET /uploads/images/hdr009.jpg HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:03] "[35m[1mGET /uploads/images//hdr009.jpg HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:05] "GET /search?s=Картинка HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /uploads/images/hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads"], path)
+KeyError: 'uploads'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:05] "[35m[1mGET /uploads/images/hdr009.jpg HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /uploads/images//hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads"], path)
+KeyError: 'uploads'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:05] "[35m[1mGET /uploads/images//hdr009.jpg HTTP/1.1[0m" 500 -
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:06] "GET /search?s=Картинка HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /uploads/images/hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads"], path)
+KeyError: 'uploads'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:06] "[35m[1mGET /uploads/images/hdr009.jpg HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /uploads/images//hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads"], path)
+KeyError: 'uploads'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:06] "[35m[1mGET /uploads/images//hdr009.jpg HTTP/1.1[0m" 500 -
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:06] "GET /search?s=Картинка HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /uploads/images/hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads"], path)
+KeyError: 'uploads'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:06] "[35m[1mGET /uploads/images/hdr009.jpg HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /uploads/images//hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads"], path)
+KeyError: 'uploads'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:06] "[35m[1mGET /uploads/images//hdr009.jpg HTTP/1.1[0m" 500 -
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:06] "GET /search?s=Картинка HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /uploads/images/hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads"], path)
+KeyError: 'uploads'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:06] "[35m[1mGET /uploads/images/hdr009.jpg HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /uploads/images//hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads"], path)
+KeyError: 'uploads'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:06] "[35m[1mGET /uploads/images//hdr009.jpg HTTP/1.1[0m" 500 -
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:07] "GET /search?s=Картинка HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /uploads/images/hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads"], path)
+KeyError: 'uploads'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:07] "[35m[1mGET /uploads/images/hdr009.jpg HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /uploads/images//hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads"], path)
+KeyError: 'uploads'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:07] "[35m[1mGET /uploads/images//hdr009.jpg HTTP/1.1[0m" 500 -
+INFO:root:Loading the main page
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:12] "GET /search?s=кот HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Loading the main page
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:19] "GET /search?s=Картинка HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /uploads/images/hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads"], path)
+KeyError: 'uploads'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:19] "[35m[1mGET /uploads/images/hdr009.jpg HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /uploads/images//hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads"], path)
+KeyError: 'uploads'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:13:19] "[35m[1mGET /uploads/images//hdr009.jpg HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:14:00] "GET /search?s=Картинка HTTP/1.1" 200 -
+ERROR:main:Exception on /uploads/images/hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads/image/"], path)
+KeyError: 'uploads/image/'
+ERROR:main:Exception on /uploads/images//hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads/image/"], path)
+KeyError: 'uploads/image/'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:14:00] "[35m[1mGET /uploads/images/hdr009.jpg HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:14:00] "[35m[1mGET /uploads/images//hdr009.jpg HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:14:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:14:01] "GET /search?s=Картинка HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:14:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /uploads/images/hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads/image/"], path)
+KeyError: 'uploads/image/'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:14:01] "[35m[1mGET /uploads/images/hdr009.jpg HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /uploads/images//hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads/image/"], path)
+KeyError: 'uploads/image/'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:14:01] "[35m[1mGET /uploads/images//hdr009.jpg HTTP/1.1[0m" 500 -
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:14:03] "GET /search?s=Картинка HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:14:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /uploads/images/hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads/image/"], path)
+KeyError: 'uploads/image/'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:14:03] "[35m[1mGET /uploads/images/hdr009.jpg HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /uploads/images//hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads/image/"], path)
+KeyError: 'uploads/image/'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:14:03] "[35m[1mGET /uploads/images//hdr009.jpg HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:15:21] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:15:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:15:42] "POST /posts HTTP/1.1" 200 -
+ERROR:werkzeug:127.0.0.1 - - [08/May/2022 23:15:42] code 400, message Bad request syntax ('------WebKitFormBoundarytN3KNDkmiMLhYtZq')
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:15:42] "[35m[1mNone /posts HTTP/0.9[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:15:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:18:30] "POST /posts HTTP/1.1" 200 -
+ERROR:werkzeug:127.0.0.1 - - [08/May/2022 23:18:30] code 400, message Bad request syntax ('------WebKitFormBoundaryIubrVft4hpfub7Z4')
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:18:30] "[35m[1mNone /posts HTTP/0.9[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:18:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Loading the main page
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:31:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:31:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:31:27] "GET /search?s=кот HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:31:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:31:32] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:31:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:31:50] "POST /posts HTTP/1.1" 200 -
+ERROR:werkzeug:127.0.0.1 - - [08/May/2022 23:31:50] code 400, message Bad request syntax ('------WebKitFormBoundaryR7vWIWDvJbNRZMlT')
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:31:50] "[35m[1mNone /posts HTTP/0.9[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:31:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:32:34] "POST /posts HTTP/1.1" 200 -
+ERROR:werkzeug:127.0.0.1 - - [08/May/2022 23:32:34] code 400, message Bad request syntax ('------WebKitFormBoundarymg76CzjHFYHFQpNq')
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:32:34] "[35m[1mNone /posts HTTP/0.9[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:32:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:34:38] "POST /posts HTTP/1.1" 200 -
+ERROR:werkzeug:127.0.0.1 - - [08/May/2022 23:34:38] code 400, message Bad request syntax ('------WebKitFormBoundarymg76CzjHFYHFQpNq')
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:34:38] "[35m[1mNone /posts HTTP/0.9[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:34:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:35:03] "POST /posts HTTP/1.1" 200 -
+ERROR:werkzeug:127.0.0.1 - - [08/May/2022 23:35:03] code 400, message Bad request syntax ('------WebKitFormBoundaryAPGRBsX5B9lfYqeC')
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:35:03] "[35m[1mNone /posts HTTP/0.9[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:35:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:37:55] "POST /posts HTTP/1.1" 200 -
+ERROR:werkzeug:127.0.0.1 - - [08/May/2022 23:37:55] code 400, message Bad request syntax ('------WebKitFormBoundarydMh3yAeMFpbjDDOE')
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:37:55] "[35m[1mNone /posts HTTP/0.9[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:37:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:38:49] "POST /posts HTTP/1.1" 200 -
+ERROR:werkzeug:127.0.0.1 - - [08/May/2022 23:38:49] code 400, message Bad request syntax ('------WebKitFormBoundaryBHu0X73AWAJDP5yC')
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:38:49] "[35m[1mNone /posts HTTP/0.9[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:38:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Loading the main page
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:38:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:38:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:38:54] "GET /search?s=Картинка HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:38:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /uploads/images/hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["/uploads/"], path)
+KeyError: '/uploads/'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:38:54] "[35m[1mGET /uploads/images/hdr009.jpg HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /uploads/images//hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["/uploads/"], path)
+KeyError: '/uploads/'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:38:54] "[35m[1mGET /uploads/images//hdr009.jpg HTTP/1.1[0m" 500 -
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:38:56] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:38:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:39:16] "POST /posts HTTP/1.1" 200 -
+ERROR:werkzeug:127.0.0.1 - - [08/May/2022 23:39:16] code 400, message Bad request syntax ('------WebKitFormBoundaryHGmXPQskk1Fn8sQE')
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:39:16] "[35m[1mNone /posts HTTP/0.9[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:39:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Loading the main page
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:40:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:40:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:40:35] "GET /search?s=кот HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:40:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Loading the main page
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:40:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:40:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:40:39] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:40:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:page add post
+ERROR:main:Exception on /posts [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 51, in created_new_post
+    return render_template("post_uploaded.html", new_post=new_post)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\templating.py", line 148, in render_template
+    return _render(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jinja2\environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\templates\post_uploaded.html", line 16, in top-level template code
+    <img src="{{ url_for(new_post.pic) }}" width="100%" alt="">
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\helpers.py", line 336, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\helpers.py", line 323, in url_for
+    rv = url_adapter.build(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2307, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'uploads/images/455422.jpg'. Did you mean 'main_blueprint.main_page' instead?
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:40:56] "[35m[1mPOST /posts HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:page add post
+ERROR:main:Exception on /posts [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 51, in created_new_post
+    return render_template("post_uploaded.html", new_post=new_post)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\templating.py", line 148, in render_template
+    return _render(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jinja2\environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\templates\post_uploaded.html", line 16, in top-level template code
+    <img src="{{ url_for(new_post.pic) }}" width="100%" alt="">
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\helpers.py", line 336, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\helpers.py", line 323, in url_for
+    rv = url_adapter.build(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2307, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'uploads/images/455422.jpg'. Did you mean 'main_blueprint.main_page' instead?
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:43:26] "[35m[1mPOST /posts HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:44:25] "POST /posts HTTP/1.1" 200 -
+ERROR:main:Exception on /uploads/images/455422.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads/"], path)
+KeyError: 'uploads/'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:44:25] "[35m[1mGET /uploads/images/455422.jpg HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:44:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:45:37] "GET /posts HTTP/1.1" 200 -
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:45:39] "POST /posts HTTP/1.1" 200 -
+ERROR:main:Exception on /uploads/images/455422.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads/images/"], path)
+KeyError: 'uploads/images/'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:45:39] "[35m[1mGET /uploads/images/455422.jpg HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:45:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Loading the main page
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:45:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:45:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:45:49] "GET /search?s=Картинка HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:45:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /uploads/images/hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads/images/"], path)
+KeyError: 'uploads/images/'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:45:49] "[35m[1mGET /uploads/images/hdr009.jpg HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /uploads/images//hdr009.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads/images/"], path)
+KeyError: 'uploads/images/'
+ERROR:main:Exception on /uploads/images/455422.jpg [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 56, in static_dir
+    return send_from_directory(app.config["uploads/images/"], path)
+KeyError: 'uploads/images/'
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:45:49] "[35m[1mGET /uploads/images//hdr009.jpg HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:45:49] "[35m[1mGET /uploads/images/455422.jpg HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:46:53] "GET /search?s=Картинка HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:46:53] "[33mGET /uploads/images/hdr009.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:46:53] "[33mGET /uploads/images//hdr009.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:46:53] "[33mGET /uploads/images/455422.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:46:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:46:57] "GET /search?s=Картинка HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:46:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:46:57] "[33mGET /uploads/images/hdr009.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:46:57] "[33mGET /uploads/images//hdr009.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:46:57] "[33mGET /uploads/images/455422.jpg HTTP/1.1[0m" 404 -
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:47:00] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:47:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:47:15] "POST /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:47:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:47:15] "[33mGET /uploads/images/way-lake-mountains-1.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:57:20] "[33mGET /uploads/images/way-lake-mountains-1.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:57:34] "[33mGET /uploads/images/way-lake-mountains-1.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:59:07] "POST /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:59:07] "[33mGET /uploads/images/way-lake-mountains-1.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:59:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:59:08] "POST /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:59:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:59:08] "[33mGET /uploads/images/way-lake-mountains-1.jpg HTTP/1.1[0m" 404 -
+INFO:root:Loading the main page
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:59:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:59:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:59:11] "GET /search?s=Картинка HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:59:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:59:12] "[33mGET /uploads/images/hdr009.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:59:12] "[33mGET /uploads/images//hdr009.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:59:12] "[33mGET /uploads/images/455422.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:59:12] "[33mGET /uploads/images/way-lake-mountains-1.jpg HTTP/1.1[0m" 404 -
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:59:15] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:59:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:59:36] "POST /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:59:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/May/2022 23:59:36] "[33mGET /uploads/images/way-lake-mountains-1.jpg HTTP/1.1[0m" 404 -
+INFO:root:Loading the main page
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 15:39:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 15:39:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Loading the main page
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 18:17:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 18:17:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 20:04:06] "GET /posts HTTP/1.1" 200 -
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 20:04:08] "GET /search?s=Картинка HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 20:04:08] "GET /uploads/images//hdr009.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 20:04:08] "GET /uploads/images/hdr009.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 20:04:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 20:04:08] "GET /uploads/images/455422.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 20:04:08] "GET /uploads/images/way-lake-mountains-1.jpg HTTP/1.1" 200 -
+INFO:root:A search is being performed
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 20:04:20] "GET /search?s=Картинка HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 20:04:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 20:04:20] "[36mGET /uploads/images/hdr009.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 20:04:20] "[36mGET /uploads/images//hdr009.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 20:04:20] "[36mGET /uploads/images/455422.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 20:04:20] "[36mGET /uploads/images/way-lake-mountains-1.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Loading the main page
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 20:41:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 20:41:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 20:41:09] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 20:41:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:page add post
+ERROR:main:Exception on /posts [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 50, in created_new_post
+    functions.overwrite_json_files(posts, data_file)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\functions.py", line 10, in overwrite_json_files
+    with open(path, "w", encoding="utf-8", ensure_ascii=False) as file:
+TypeError: 'ensure_ascii' is an invalid keyword argument for open()
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 20:41:39] "[35m[1mPOST /posts HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:page add post
+ERROR:main:Exception on /posts [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\main.py", line 50, in created_new_post
+    functions.overwrite_json_files(posts, data_file)
+  File "C:\Users\Admin\PycharmProjects\Domashka12.1\Flask_Domashka12\functions.py", line 10, in overwrite_json_files
+    with open(path, "w",  ensure_ascii=False) as file:
+TypeError: 'ensure_ascii' is an invalid keyword argument for open()
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 20:42:22] "[35m[1mPOST /posts HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:page add post
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 20:43:04] "POST /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 20:43:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/May/2022 20:43:04] "GET /uploads/images/46344.jpg HTTP/1.1" 200 -

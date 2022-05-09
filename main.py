@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, Blueprint
+from flask import Flask, request, render_template, Blueprint, send_from_directory
 import logging
 import os
 
@@ -36,7 +36,6 @@ def create_new_post():
 
 @main_blueprint.route("/posts", methods=["POST"])
 def created_new_post():
-    logging.info("page add post")
     picture = request.files.get("picture")
     content = request.form.get("content")
     if not picture or not content:
@@ -51,7 +50,12 @@ def created_new_post():
     return render_template("post_uploaded.html", new_post=new_post)
 
 
+@app.route("/uploads/<path:path>")
+def static_dir(path):
+    return send_from_directory("uploads", path)
+
+
 app.register_blueprint(main_blueprint)
 
 
-app.run(port=800)
+app.run()
